@@ -6,23 +6,6 @@ const HomePage = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        {/* Navbar lateral vertical a la izquierda */}
-        <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-          <div className="position-sticky">
-            <ul className="nav flex-column">
-              <li className="nav-item">
-                <a className="nav-link active" href="#">Inicio</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Perfil</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Configuración</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
         {/* Contenido principal con cards en el centro */}
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">

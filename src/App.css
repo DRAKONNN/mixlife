@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: linear-gradient(to top right, #ffffff, #ff8c94);
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.navbar {
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+}
