@@ -18,3 +18,12 @@ body {
 .main-content {
   margin-left: 240px; /* Ancho del navbar lateral */
 }
+
+.hover-zoom-interest {
+  border-radius: 5px;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.hover-zoom-interest:hover {
+  transform: scale(1.05);
+}
