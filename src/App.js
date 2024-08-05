@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Home from './components/Home';
+import BL from './components/BL';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
                     <Link className="nav-link" to="/home">Home</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/others">Others</Link>
+                    <Link className="nav-link" to="/b&l">B&L</Link>
                   </li>
                   {/* Puedes agregar más enlaces aquí */}
                 </ul>
@@ -33,6 +34,7 @@ function App() {
           <div className="flex-grow-1 p-3">
             <Routes>
               <Route path="/home" element={<Home />} />
+              <Route path="/b&l" element={<BL />} />
               {/* Puedes agregar más rutas aquí */}
               <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
