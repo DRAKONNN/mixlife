@@ -59,12 +59,11 @@ const BL = () => {
     <div className="container-fluid">
       <div className="row">
         {/* Contenido principal con cards en el centro */}
-        <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <main className="col-md-10 col-lg-10 mx-auto px-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 className="h2">B&L</h1>
           </div>
-
-          <div className="row row-cols-1 row-cols-md-2 g-4">
+          <div className="row row-cols-2 row-cols-md-2 g-4">
             <BlTaleList blTales={state.blTales} onCardClick={handleCardClick} />
           </div>
         </main>

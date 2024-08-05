@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import BL from './components/BL';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
@@ -19,10 +20,14 @@ function App() {
               <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul className="navbar-nav flex-lg-column">
                   <li className="nav-item">
-                    <Link className="nav-link" to="/home">Home</Link>
+                    <Link className="nav-link" to="/home">
+                      <i class='fas fa-book'></i> Home
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/b&l">B&L</Link>
+                    <Link className="nav-link" to="/b&l">
+                      <i class='fas fa-user-secret'></i> B&L
+                      </Link>
                   </li>
                   {/* Puedes agregar más enlaces aquí */}
                 </ul>
@@ -31,7 +36,7 @@ function App() {
           </nav>
 
           {/* Configuración de las rutas */}
-          <div className="flex-grow-1 p-3">
+          <div className="flex-grow-1">
             <Routes>
               <Route path="/home" element={<Home />} />
               <Route path="/b&l" element={<BL />} />
