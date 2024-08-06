@@ -21,7 +21,7 @@ function BlTale(props) {
               <Badge bg="warning text-black"><i className='fas fa-certificate'></i> Novedad</Badge>
             )}
           </h5>
-          <h2 className={`card-title title-blTale text-center ${blTale.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{blTale.title}</h2>
+          <h2 className={`card-title title-blTale text-center text-primary ${blTale.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{blTale.title}</h2>
           <h4 className={`card-title title-blTale text-center ${blTale.classAttText} mobile-h4`} style={{ flex: '0' }}>{blTale.author}</h4>
         </div>
       </div>

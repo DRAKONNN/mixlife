@@ -8,7 +8,7 @@ export default [{
     que empezar bien el día, y sin movimiento es como si siguiera dormida. Ese vaso de
     agua hidrata más de lo que creía. Siento un chute de energía que sale desde dentro
     de mi. Derepente, mi madre rompe aguas. Estoy preparada para la vida.`,
-  image: '/images/shorts/Placeholder.jpg',
+  image: '/images/shorts/FuturoAgua.jpg',
 }, {
   id: 's02', 
   title: "Placeholder",

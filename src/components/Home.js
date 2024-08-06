@@ -21,7 +21,7 @@ function Short(props) {
               <Badge bg="warning text-black"><i className='fas fa-certificate'></i> Novedad</Badge>
             )}
           </h5>
-          <h2 className={`card-title title-short text-center ${short.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{short.title}</h2>
+          <h2 className={`card-title title-short text-center text-danger ${short.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{short.title}</h2>
           <h4 className={`card-title title-short text-center ${short.classAttText} mobile-h4`} style={{ flex: '0' }}>{short.author}</h4>
         </div>
       </div>
