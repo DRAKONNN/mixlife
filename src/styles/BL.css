@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 /* Estilos para el fondo con gradiente */
 body {
@@ -7,8 +7,10 @@ body {
   background-attachment: fixed;
 }
 
-.home-style {
-  font-family: 'Courgette', cursive;
+.bl-style {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .sidebar {

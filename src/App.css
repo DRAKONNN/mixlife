@@ -38,7 +38,6 @@
 }
 
 body {
-  background: linear-gradient(to top right, #ffffff, #ff8c94);
   height: 100vh;
   margin: 0;
   background-attachment: fixed;
@@ -52,4 +51,18 @@ body {
   .navbar {
     height: auto;
   }
+}
+
+.home-background {
+  background: linear-gradient(to bottom right, #ffffff, #cf737b);
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.bl-background {
+  background: linear-gradient(to bottom right, #ffffff, #87CEEB);
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
 }

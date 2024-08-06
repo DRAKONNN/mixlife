@@ -56,7 +56,7 @@ const Home = () => {
   const handleClose = () => setShowModal(false);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid home-style">
       <div className="row">
         {/* Contenido principal con cards en el centro */}
         <main className="col-md-10 col-lg-10 mx-auto px-4">
