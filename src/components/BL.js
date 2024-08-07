@@ -13,7 +13,7 @@ function BlTale(props) {
     <div className="col-lg-3" onClick={() => onClick(blTale)}>
       <div className="card text-white hover-zoom-interest">
         <div className="card-img-wrapper">
-          <img src={blTale.image} className="card-img zoom-effect" alt={blTale.title} />
+          <img src={blTale.image} className="card-img zoom-effect img-blur" alt={blTale.title} />
         </div>
         <div className="card-img-overlay d-flex flex-column justify-content-between">
           <h5 className="text-end" style={{ float: 'right', clear: 'both' }}>
@@ -21,7 +21,7 @@ function BlTale(props) {
               <Badge bg="warning text-black"><i className='fas fa-certificate'></i> Novedad</Badge>
             )}
           </h5>
-          <h2 className={`card-title title-blTale text-center text-primary ${blTale.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{blTale.title}</h2>
+          <h2 className={`card-title title-blTale text-center text-bl-outline text-uppercase ${blTale.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{blTale.title}</h2>
           <h4 className={`card-title title-blTale text-center ${blTale.classAttText} mobile-h4`} style={{ flex: '0' }}>{blTale.author}</h4>
         </div>
       </div>
@@ -61,7 +61,7 @@ const BL = () => {
         {/* Contenido principal con cards en el centro */}
         <main className="col-md-10 col-lg-10 mx-auto px-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 className="h2 text-primary">B&L</h1>
+            <h1 className="h2 text-bl">B&L</h1>
           </div>
           <div className="row row-cols-2 row-cols-md-2 g-4">
             <BlTaleList blTales={state.blTales} onCardClick={handleCardClick} />
@@ -70,7 +70,7 @@ const BL = () => {
       </div>
 
       {selectedBlTale && (
-        <Modal show={showModal} onHide={handleClose}>
+        <Modal className="bl-style" show={showModal} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>{selectedBlTale.title}</Modal.Title>
           </Modal.Header>

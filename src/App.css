@@ -53,8 +53,16 @@ body {
   }
 }
 
+.img-blur {
+  filter: blur(2px); /* Ajusta el valor de desenfoque según tus necesidades */
+}
+
+.img-low {
+  opacity: 0.4;
+}
+
 .home-background {
-  background: linear-gradient(to bottom right, #ffffff, #cf737b);
+  background: linear-gradient(to bottom right, #ffffff, #884f54);
   height: 100vh;
   margin: 0;
   background-attachment: fixed;

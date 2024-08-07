@@ -13,7 +13,7 @@ function Short(props) {
     <div className="col-lg-3" onClick={() => onClick(short)}>
       <div className="card text-white hover-zoom-interest">
         <div className="card-img-wrapper">
-          <img src={short.image} className="card-img zoom-effect" alt={short.title} />
+          <img src={short.image} className="card-img zoom-effect img-low" alt={short.title} />
         </div>
         <div className="card-img-overlay d-flex flex-column justify-content-between">
           <h5 className="text-end" style={{ float: 'right', clear: 'both' }}>
@@ -21,7 +21,7 @@ function Short(props) {
               <Badge bg="warning text-black"><i className='fas fa-certificate'></i> Novedad</Badge>
             )}
           </h5>
-          <h2 className={`card-title title-short text-center text-danger ${short.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{short.title}</h2>
+          <h2 className={`card-title title-short text-center text-shorts ${short.classAttText}`} style={{ flex: '1', marginTop: '35%' }}>{short.title}</h2>
           <h4 className={`card-title title-short text-center ${short.classAttText} mobile-h4`} style={{ flex: '0' }}>{short.author}</h4>
         </div>
       </div>
@@ -61,7 +61,7 @@ const Home = () => {
         {/* Contenido principal con cards en el centro */}
         <main className="col-md-10 col-lg-10 mx-auto px-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 className="h2">Story Mixlife</h1>
+            <h1 className="h2 text-shorts">Story Mixlife</h1>
           </div>
           <div className="row row-cols-2 row-cols-md-2 g-4">
             <ShortList shorts={state.shorts} onCardClick={handleCardClick} />
@@ -70,7 +70,7 @@ const Home = () => {
       </div>
 
       {selectedShort && (
-        <Modal show={showModal} onHide={handleClose}>
+        <Modal className="home-style" show={showModal} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>{selectedShort.title}</Modal.Title>
           </Modal.Header>

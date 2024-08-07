@@ -20,6 +20,19 @@ body {
   padding: 48px 0 0;
 }
 
+.text-shorts {
+  color: #884f54;
+}
+
+.text-shorts-outline {
+  color: #884f54;
+  text-shadow: 
+      -1px -1px 0 #ffffff,  
+       1px -1px 0 #ffffff,
+      -1px  1px 0 #ffffff,
+       1px  1px 0 #ffffff;
+}
+
 .main-content {
   margin-left: 240px; /* Ancho del navbar lateral */
 }
